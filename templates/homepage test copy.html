@@ -668,9 +668,12 @@
     {% endblock %}
 </head>
 
-
+{% block body%}
 <body class="brz" >
-        {% block sections %} {% endblock %}
+        {% block header %}
+            {% block logomenu %}
+<!--                            LOGO -->
+
               <div class="brz-row brz-css-jpzie brz-css-fawti">
                             <div class="brz-columns brz-css-zzyvd brz-css-djzxm" data-custom-id="yuackhuavtjgtrktcfgadudejzorquvqsitf">
                                 <div class="brz-column__items brz-css-hwbmw brz-css-rqtnt">
@@ -685,6 +688,7 @@
                                     </div>
                                 </div>
                             </div>
+<!--                            LOGO -->
 
 <!--                            NAVIGATION -->
 
@@ -736,9 +740,10 @@
 <!--                            NAVIGATION -->
                         </div>
 
-                    </div>
+              </div>
 
-
+            {% endblock %}
+        {% endblock %}
 
 
 
@@ -1771,6 +1776,7 @@
 
 
              {% block content %}{% endblock %}
+
 <!--FOOTER SECTION -->
     <section data-uid="wiftvnpwwojusjjzkyfqereywfmkjjirxgre" id="contact" class="brz-section brz-css-gbxkc">
                 <div class="brz-section__content brz-section--boxed brz-css-ublhc brz-css-nwrae" data-custom-id="wunhgskmohydzosogrnhumcfrxndrddydhlf">
@@ -1936,3 +1942,4 @@
     </script>
 </body>
 </html>
+{% endblock %}
