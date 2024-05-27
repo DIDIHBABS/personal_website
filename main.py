@@ -9,7 +9,12 @@ def home():
     return render_template('homepage.html')
 
 
-@app.route("/home_test")
+@app.route('/home_test')
+def test_home():
+    return render_template('homepage test copy 3.html')
+
+
+@app.route("/inner_test")
 def home_test():
     return render_template('ai copy 2.html')
 
@@ -22,6 +27,11 @@ def navigation():
 @app.route('/uxrportfolio')
 def uxr_portfolio():
     return render_template('uxr2.html')
+
+
+@app.route('/uxrportfolion')
+def nuxr_portfolio():
+    return render_template('new_ai.html')
 
 
 @app.route('/aiportfolio')
